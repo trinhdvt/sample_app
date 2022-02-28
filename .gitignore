@@ -1,56 +1,158 @@
-*.gem
 *.rbc
-/.config
+capybara-*.html
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/db/*.sqlite3-[0-9]*
+/public/system
 /coverage/
+/spec/tmp
+*.orig
+rerun.txt
+pickle-email-*.html
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+config/initializers/secret_token.rb
+config/master.key
+.env
+.env.*
+/.bundle
+/vendor/bundle
+.rvmrc
+/vendor/assets/bower_components
+*.bowerrc
+bower.json
+.powenv
+.byebug_history
+node_modules/
+/public/packs
+/public/packs-test
+/public/assets
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+/storage/*
+!/storage/.keep
+/public/uploads
+/.idea/*
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/contentModel.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+cmake-build-*/
+.idea/**/mongoSettings.xml
+*.iws
+out/
+.idea_modules/
+atlassian-ide-plugin.xml
+.idea/replstate.xml
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+.idea/httpRequests
+.idea/caches/build_file_checksums.ser
+logs
+*.log
+npm-debug.log*
+yarn-error.log*
+lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+pids
+*.pid
+*.seed
+*.pid.lock
+lib-cov
+coverage
+*.lcov
+.nyc_output
+.grunt
+bower_components
+.lock-wscript
+build/Release
+jspm_packages/
+web_modules/
+*.tsbuildinfo
+.npm
+.eslintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.node_repl_history
+*.tgz
+.env.test
+.cache
+.parcel-cache
+.next
+out
+.nuxt
+dist
+.cache/
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.vscode-test
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+*.gem
+/.config
 /InstalledFiles
 /pkg/
 /spec/reports/
 /spec/examples.txt
 /test/tmp/
 /test/version_tmp/
-/tmp/
-
-# Used by dotenv library to load environment variables.
-# .env
-
-# Ignore Byebug command history file.
-.byebug_history
-
-## Specific to RubyMotion:
 .dat*
 .repl_history
 build/
 *.bridgesupport
 build-iPhoneOS/
 build-iPhoneSimulator/
-
-## Specific to RubyMotion (use of CocoaPods):
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# vendor/Pods/
-
-## Documentation cache and generated files:
 /.yardoc/
 /_yardoc/
 /doc/
 /rdoc/
-
-## Environment normalization:
 /.bundle/
-/vendor/bundle
 /lib/bundler/man/
-
-# for a library or gem, you might want to ignore these files since the code is
-# intended to run in multiple environments; otherwise, check them in:
-# Gemfile.lock
-# .ruby-version
-# .ruby-gemset
-
-# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
-.rvmrc
-
-# Used by RuboCop. Remote config files pulled in from inherit_from directive.
-# .rubocop-https?--*
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+/.browserslistrc
+/.framgia-ci-reports/
+/test/
+/config/credentials.yml.enc
+/config/database.yml
+/config/storage.yml
+/.framgia-ci-result.temp.yml
