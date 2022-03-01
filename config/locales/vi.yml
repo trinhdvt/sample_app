@@ -1,0 +1,43 @@
+vi:
+  base_title: "Ứng dụng mẫu với Ruby on Rails"
+  layouts:
+    header:
+      logo: "Sample App"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      log_in: "Đăng nhập"
+    footer:
+      about: "Thông tin"
+      contact: "Liên hệ"
+      news: "Tin tức"
+      en: "Tiếng Anh"
+      vi: "Tiếng Việt"
+      tutorial_name: "Hướng dẫn Ruby on Rails"
+      tutor: "bởi Michael Hartl"
+
+  static_pages:
+    home:
+      title: "Trang chủ"
+      welcome: "Chào mừng đến với Sample App"
+      intro: "Đây là trang chủ của Sample App"
+      signup: "Đăng ký ngay!"
+    help:
+      title: "Trợ giúp"
+      welcome: "Trợ giúp"
+      tutorial_help:
+        intro: "Tìm kiếm sự trợ giúp về Ruby on Rails tại"
+        site_name: "Rails Tutorial"
+      app_help:
+        intro: "Tìm kiếm sự trợ giúp về Sample App tại"
+        site_name: "Ruby on Rails Tutorial"
+    about:
+      title: "Thông tin"
+      welcome: "Thông tin"
+      intro: "Ruby on Rails Tutorial là một cuốn sách dạy cách phát triển ứng dụng Web với Rails.
+              Đây là ứng dụng được xây dựng trong quá trình học."
+      addition_info: "Xem thêm"
+    contact:
+      title: "Liên hệ"
+      welcome: "Liên hệ"
+      intro: "Liên hệ với tác giả "
+      site_name: "tại đây"
