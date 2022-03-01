@@ -1,0 +1,17 @@
+<footer class="footer">
+  <small>
+    <%= link_to t(".tutorial_name"), "https://www.railstutorial.org/" %>
+    <%= link_to t(".tutor"), "https://www.michaelhartl.com/" %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".about"), about_path %></li>
+      <li><%= link_to t(".contact"), contact_path %></li>
+      <li><%= link_to t(".news"), "https://news.railstutorial.org" %></li>
+      <li>|</li>
+      <li><%= link_to t(".en"), locale: :en %></li>
+      <li><%= link_to t(".vi"), locale: :vi %></li>
+    </ul>
+  </nav>
+
+</footer>
