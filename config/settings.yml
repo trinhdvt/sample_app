@@ -4,3 +4,7 @@ digits:
   digit_6: 6
   digit_50: 50
   digit_255: 255
+gravatar:
+  url: "https://secure.gravatar.com/avatar"
+  default_size: 50
+  size_200: 200

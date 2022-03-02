@@ -41,3 +41,22 @@ en:
       welcome: "Contact"
       intro: "Contact the Ruby on Rails Tutorial about the sample app at "
       site_name: "the contact page"
+
+  users:
+    not_found: "User not found"
+    new:
+      title: "Sign up"
+      header: "Sign up"
+      submit: "Create my account"
+      success: "Welcome to Sample App"
+      failed: "Sign up failed!"
+
+  shared:
+    error_messages:
+      prefix: "The form contains %{err_suffix}."
+      singular: "error"
+
+  activerecord:
+    attributes:
+      user:
+        password_confirmation: "Password Confirmation"
