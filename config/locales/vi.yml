@@ -41,3 +41,46 @@ vi:
       welcome: "Liên hệ"
       intro: "Liên hệ với tác giả "
       site_name: "tại đây"
+
+  users:
+    not_found: "Không tìm thấy người dùng"
+    new:
+      title: "Đăng ký"
+      header: "Đăng ký"
+      submit: "Tạo tài khoản"
+      success: "Chào mừng đến với Sample App"
+      failed: "Đăng ký thất bại!"
+
+  shared:
+    error_messages:
+      prefix: "Có %{err_suffix} trong biểu mẫu đăng ký."
+      singular: "lỗi"
+
+  activerecord:
+    attributes:
+      user:
+        name: "Tên"
+        email: "Địa chỉ Email"
+        password: "Mật khẩu"
+        password_confirmation: "Mật khẩu xác nhận"
+        password_digest: "Mật khẩu"
+
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "không được để trống"
+              too_long: "không được quá 50 ký tự"
+            email:
+              blank: "không được để trống"
+              too_long: "không được quá 255 ký tự"
+              invalid: "không đúng định dạng"
+              taken: "đã được sử dụng"
+            password:
+              blank: "không được để trống!"
+            password_digest:
+              blank: "không được để trống!"
+              too_short: "tối thiểu 6 ký tự!"
+            password_confirmation:
+              confirmation: "không trùng khớp!"
