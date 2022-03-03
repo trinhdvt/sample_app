@@ -6,6 +6,10 @@ en:
       home: "Home"
       help: "Help"
       log_in: "Log in"
+      log_out: "Log out"
+      account: "Account"
+      profile: "Profile"
+      setting: "Settings"
     footer:
       about: "About"
       contact: "Contact"
@@ -50,6 +54,18 @@ en:
       submit: "Create my account"
       success: "Welcome to Sample App"
       failed: "Sign up failed!"
+
+  sessions:
+    destroy: "Good Bye!"
+    create:
+      failed: "Invalid Email/Password"
+    new:
+      header: "Log in"
+      title: "Log in"
+      email: "Email"
+      password: "Password"
+      invite: "Sign up now ?"
+      login_btn: "Log in"
 
   shared:
     error_messages:

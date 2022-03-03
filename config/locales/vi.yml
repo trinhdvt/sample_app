@@ -6,6 +6,10 @@ vi:
       home: "Trang chủ"
       help: "Trợ giúp"
       log_in: "Đăng nhập"
+      profile: "Cá nhân"
+      setting: "Thiết lặp"
+      log_out: "Đăng xuất"
+      account: "Tài khoản"
     footer:
       about: "Thông tin"
       contact: "Liên hệ"
@@ -50,6 +54,18 @@ vi:
       submit: "Tạo tài khoản"
       success: "Chào mừng đến với Sample App"
       failed: "Đăng ký thất bại!"
+
+  sessions:
+    destroy: "Một ngày vui vẻ ạ!"
+    create:
+      failed: "Sai thông tin đăng nhập rồi ạ!"
+    new:
+      header: "Đăng nhập"
+      title: "Đăng nhập"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      invite: "Chưa có tài khoản ?"
+      login_btn: "Đăng nhập"
 
   shared:
     error_messages:
