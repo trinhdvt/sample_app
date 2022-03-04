@@ -66,6 +66,7 @@ vi:
       password: "Mật khẩu"
       invite: "Chưa có tài khoản ?"
       login_btn: "Đăng nhập"
+      remember_me: "Nhớ mặt em với ạ"
 
   shared:
     error_messages:

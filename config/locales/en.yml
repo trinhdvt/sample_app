@@ -66,6 +66,7 @@ en:
       password: "Password"
       invite: "Sign up now ?"
       login_btn: "Log in"
+      remember_me: "Remember me"
 
   shared:
     error_messages:
