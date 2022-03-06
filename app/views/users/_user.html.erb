@@ -1,0 +1,10 @@
+<li>
+  <%= gravatar_for user %>
+  <%= link_to user.name, user %>
+  <% if can_delete? user.id %>
+    |
+    <%= link_to t(".delete"), user, method: :delete,
+                data: { confirm: t(".delete_confirm") }
+    %>
+  <% end %>
+</li>

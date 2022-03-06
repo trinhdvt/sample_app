@@ -8,7 +8,7 @@ class User < ApplicationRecord
             length: {maximum: Settings.digits.digit_255},
             format: {with: EMAIL_REGEX}, uniqueness: true
   validates :password_digest, presence: true,
-            length: {minimum: Settings.digits.digit_6}
+            length: {minimum: Settings.digits.digit_6}, allow_nil: true
 
   before_save :downcase_email
 

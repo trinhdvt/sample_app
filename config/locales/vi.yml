@@ -10,6 +10,7 @@ vi:
       setting: "Thiết lặp"
       log_out: "Đăng xuất"
       account: "Tài khoản"
+      users: "Danh sách tài khoản"
     footer:
       about: "Thông tin"
       contact: "Liên hệ"
@@ -48,12 +49,30 @@ vi:
 
   users:
     not_found: "Không tìm thấy người dùng"
+    not_logged_in: "Đăng nhập trước đi ạ"
+    update:
+      success: "Cập nhật thành công rồi ạ!"
+      failed: "Thất bại rồi ạ!"
     new:
       title: "Đăng ký"
       header: "Đăng ký"
       submit: "Tạo tài khoản"
       success: "Chào mừng đến với Sample App"
       failed: "Đăng ký thất bại!"
+    edit:
+      header: "Cập nhật thông tin cá nhân"
+      title: "Cập nhật"
+      submit: "Lưu thay đổi"
+    index:
+      title: "Danh sách người dùng"
+      header: "Danh sách người dùng"
+    user:
+      delete: "Xoá"
+      delete_confirm: "Xác nhận xoá ?"
+    destroy:
+      success: "Xoá thành công"
+      failed: "Xoá thất bại"
+    unauthorized: "Oops! Bạn không được phép làm thế!"
 
   sessions:
     destroy: "Một ngày vui vẻ ạ!"
