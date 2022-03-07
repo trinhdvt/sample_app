@@ -10,6 +10,7 @@ en:
       account: "Account"
       profile: "Profile"
       setting: "Settings"
+      users: "Users"
     footer:
       about: "About"
       contact: "Contact"
@@ -48,12 +49,30 @@ en:
 
   users:
     not_found: "User not found"
+    not_logged_in: "Please log in!"
+    update:
+      success: "Profile updated!"
+      failed: "Update failed!"
     new:
       title: "Sign up"
       header: "Sign up"
       submit: "Create my account"
       success: "Welcome to Sample App"
       failed: "Sign up failed!"
+    edit:
+      title: "Edit"
+      header: "Edit your profile"
+      submit: "Save changes"
+    index:
+      title: "All Users"
+      header: "All Users"
+    destroy:
+      success: "User deleted"
+      failed: "Failed to delete user"
+    user:
+      delete: "Delete"
+      delete_confirm: "You sure?"
+    unauthorized: "Invalid action"
 
   sessions:
     destroy: "Good Bye!"

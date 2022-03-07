@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
     if user&.authenticate password
       login user
       remember_user user if remember_me == "1"
-      redirect_to user
+      redirect_back_or user
     else
       flash.now[:danger] = t ".create.failed"
       render :new
