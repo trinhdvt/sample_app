@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   before_action :is_admin?, only: :destroy
 
   def index
-    @pagy, @users = pagy(User.all)
+    @pagy, @users = pagy User.activated
   end
 
   def new
@@ -20,8 +20,9 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      flash[:success] = t ".new.success"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".new.success"
+      redirect_to root_url
     else
       flash.now[:danger] = t ".new.failed"
       render :new
@@ -58,7 +59,7 @@ class UsersController < ApplicationController
 
   def load_user
     @user = User.find_by id: params[:id]
-    return if @user
+    return if @user&.activated?
 
     solve_not_found
   end
