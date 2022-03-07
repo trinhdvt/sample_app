@@ -57,7 +57,7 @@ vi:
       title: "Đăng ký"
       header: "Đăng ký"
       submit: "Tạo tài khoản"
-      success: "Chào mừng đến với Sample App"
+      success: "Kiểm tra email của bạn đi ạ!"
       failed: "Đăng ký thất bại!"
     edit:
       header: "Cập nhật thông tin cá nhân"
@@ -78,6 +78,7 @@ vi:
     destroy: "Một ngày vui vẻ ạ!"
     create:
       failed: "Sai thông tin đăng nhập rồi ạ!"
+      unactivated: "Bạn chưa vào email để kích hoạt tài khoản à ?"
     new:
       header: "Đăng nhập"
       title: "Đăng nhập"
@@ -86,6 +87,18 @@ vi:
       invite: "Chưa có tài khoản ?"
       login_btn: "Đăng nhập"
       remember_me: "Nhớ mặt em với ạ"
+
+  account_activations:
+    edit:
+      success: "Kích hoạt tài khoản thành công"
+      failed: "Liên kết không tồn tại"
+
+  user_mailer:
+    account_activation:
+      subject: "Kích hoạt tài khoản"
+      greeting: "Xin chào"
+      body: "Chào mừng đến với Sample App. Click vào bên dưới để kích hoạt tài khoản đi ạ."
+      link_title: "Kích hoạt"
 
   shared:
     error_messages:

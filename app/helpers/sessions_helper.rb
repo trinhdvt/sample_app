@@ -14,10 +14,10 @@ module SessionsHelper
 
   def current_user
     user_id ||= session[:user_id] || cookies.signed[:user_id]
-    remember_token = cookies[:remember_token]
+    token = cookies[:remember_token]
 
     @current_user ||= User.find_by id: user_id
-    login @current_user if @current_user&.authenticate_token? remember_token
+    login @current_user if @current_user&.authenticated?(:remember, token)
 
     @current_user
   end
