@@ -3,7 +3,7 @@ class User < ApplicationRecord
 
   scope :activated, ->{where activated: true}
 
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
 
   validates :name, presence: true, length: {maximum: Settings.digits.digit_50}
   validates :email, presence: true,
@@ -57,6 +57,24 @@ class User < ApplicationRecord
 
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
+  end
+
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_columns(reset_digest: User.digest(reset_token),
+                   reset_sent_at: Time.zone.now)
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  def password_reset_expired?
+    reset_sent_at < Settings.digits.digit_2.hours.ago
+  end
+
+  def clear_password_reset
+    update_columns(reset_digest: nil, reset_sent_at: nil)
   end
 
   private
