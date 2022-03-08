@@ -1,6 +1,7 @@
 regex:
   email: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/'
 digits:
+  digit_2: 2
   digit_6: 6
   digit_50: 50
   digit_255: 255
