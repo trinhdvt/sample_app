@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   EMAIL_REGEX = Settings.regex.email.freeze
 
+  has_many :microposts, dependent: :destroy
+
   scope :activated, ->{where activated: true}
 
   attr_accessor :remember_token, :activation_token, :reset_token
@@ -31,6 +33,10 @@ class User < ApplicationRecord
     def new_token
       SecureRandom.urlsafe_base64
     end
+  end
+
+  def feed
+    microposts
   end
 
   def remember

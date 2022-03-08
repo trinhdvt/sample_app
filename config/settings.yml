@@ -9,3 +9,8 @@ gravatar:
   url: "https://secure.gravatar.com/avatar"
   default_size: 50
   size_200: 200
+image:
+  max_size_mb: 5
+  accept_format: ["image/jpeg", "image/gif", "image/png"]
+  accept_format_html: "image/jpeg,image/gif,image/png"
+range_500: [500, 500]

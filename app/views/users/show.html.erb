@@ -9,4 +9,17 @@
       </h1>
     </section>
   </aside>
+  <div class="col-md-8">
+    <% if @microposts.any? %>
+      <%= "#{t(".micropost")} (#{@pagy.count})" %>
+
+      <ol class="microposts">
+        <%= render @microposts %>
+      </ol>
+      <%== pagy_bootstrap_nav(@pagy) %>
+
+    <% else %>
+      <h3><%= t ".no_micropost" %></h3>
+    <% end %>
+  </div>
 </div>
