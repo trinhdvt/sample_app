@@ -2,6 +2,12 @@ class User < ApplicationRecord
   EMAIL_REGEX = Settings.regex.email.freeze
 
   has_many :microposts, dependent: :destroy
+  has_many :active_relationships, class_name: Relationship.name,
+           foreign_key: :follower_id, dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+           foreign_key: :followed_id, dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
 
   scope :activated, ->{where activated: true}
 
@@ -11,7 +17,7 @@ class User < ApplicationRecord
   validates :email, presence: true,
             length: {maximum: Settings.digits.digit_255},
             format: {with: EMAIL_REGEX}, uniqueness: true
-  validates :password_digest, presence: true,
+  validates :password, presence: true,
             length: {minimum: Settings.digits.digit_6}, allow_nil: true
 
   before_create :create_activation_digest
@@ -36,7 +42,8 @@ class User < ApplicationRecord
   end
 
   def feed
-    microposts
+    feed_filter = "relationships.follower_id = :id or microposts.user_id = :id"
+    Micropost.joins(user: [:followers]).where(feed_filter, id: id)
   end
 
   def remember
@@ -81,6 +88,18 @@ class User < ApplicationRecord
 
   def clear_password_reset
     update_columns(reset_digest: nil, reset_sent_at: nil)
+  end
+
+  def follow user
+    following << user
+  end
+
+  def unfollow user
+    following.delete user
+  end
+
+  def following? user
+    following.include? user
   end
 
   private
