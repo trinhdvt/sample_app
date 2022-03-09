@@ -26,6 +26,7 @@ vi:
       welcome: "Chào mừng đến với Sample App"
       intro: "Đây là trang chủ của Sample App"
       signup: "Đăng ký ngay!"
+      feed_title: "Bản tin mới"
     help:
       title: "Trợ giúp"
       welcome: "Trợ giúp"
@@ -73,6 +74,9 @@ vi:
       success: "Xoá thành công"
       failed: "Xoá thất bại"
     unauthorized: "Oops! Bạn không được phép làm thế!"
+    show:
+      micropost: "Bài viết"
+      no_micropost: "Oops! Chưa có bài viết nào cả ạ!"
 
   sessions:
     destroy: "Một ngày vui vẻ ạ!"
@@ -127,6 +131,11 @@ vi:
     error_messages:
       prefix: "Có %{err_suffix} trong biểu mẫu đăng ký."
       singular: "lỗi"
+    micropost_form:
+      content_holder: "Muốn đăng gì cứ nhập vào đi ạ"
+    user_info:
+      view_profile: "Trang cá nhân"
+      post_singular: "bài"
 
   activerecord:
     attributes:
@@ -156,3 +165,18 @@ vi:
               too_short: "tối thiểu 6 ký tự!"
             password_confirmation:
               confirmation: "không trùng khớp!"
+
+  microposts:
+    invalid_img_type: "phải là ảnh đúng định dạng"
+    invalid_img_size: "nhỏ hơn 5MB đi ạ"
+    create:
+      success: "Tạo thành công rồi ạ!"
+      failed: "Không hiểu sao không tạo được ạ!"
+    destroy:
+      success: "Xoá rồi ạ!"
+      failed: "Không xoá được, thử lại sau đi ạ!"
+    micropost:
+      btn: "Xoá"
+      delete_confirm: "Chắc chưa ạ!"
+      posted_time: "Đã đăng %{time} trước."
+  file_size_exceed: "Tối đa 5MB thôi ạ! Chọn lại giúp em với ạ"

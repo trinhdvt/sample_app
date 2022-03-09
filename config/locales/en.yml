@@ -26,6 +26,7 @@ en:
       welcome: "Welcome to Sample App"
       intro: "This is the home page for the Ruby on Rails Tutorial sample application."
       signup: "Sign up now!"
+      feed_title: "Micropost feed"
     help:
       title: "Help"
       welcome: "Help"
@@ -73,6 +74,9 @@ en:
       delete: "Delete"
       delete_confirm: "You sure?"
     unauthorized: "Invalid action"
+    show:
+      micropost: "Microposts"
+      no_micropost: "Oops! No micropost has been posted yet!"
 
   sessions:
     destroy: "Good Bye!"
@@ -127,8 +131,28 @@ en:
     error_messages:
       prefix: "The form contains %{err_suffix}."
       singular: "error"
+    micropost_form:
+      content_holder: "Compose new micropost..."
+    user_info:
+      view_profile: "View my profile"
+      post_singular: "micropost"
 
   activerecord:
     attributes:
       user:
         password_confirmation: "Password Confirmation"
+
+  microposts:
+    invalid_img_type: "must be a valid image format"
+    invalid_img_size: "should be less than 5MB"
+    create:
+      success: "Micropost created"
+      failed: "Can't create micropost"
+    destroy:
+      success: "Micropost deleted"
+      failed: "Something went wrong"
+    micropost:
+      btn: "Delete"
+      delete_confirm: "You sure?"
+      posted_time: "Posted %{time} ago"
+  file_size_exceed: "Maximum file size is 5MB. Please choose a smaller file."
