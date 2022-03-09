@@ -156,3 +156,14 @@ Temporary Items
 /config/database.yml
 /config/storage.yml
 /.framgia-ci-result.temp.yml
+/bin/
+/config/application.yml
+/config/settings.local.yml
+/config/settings/
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity

@@ -2,6 +2,7 @@ class Micropost < ApplicationRecord
   belongs_to :user
   has_one_attached :image
 
+  default_scope{includes(:user, image_attachment: :blob)}
   scope :newest, ->{order created_at: :desc}
 
   validates :content, presence: true,

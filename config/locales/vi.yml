@@ -77,6 +77,14 @@ vi:
     show:
       micropost: "Bài viết"
       no_micropost: "Oops! Chưa có bài viết nào cả ạ!"
+    following:
+      title: "Bạn đang theo dõi"
+    followers:
+      title: "Người đang theo dõi bạn"
+    follow:
+      follow: "Theo dõi"
+    unfollow:
+      unfollow: "Không theo dõi nữa"
 
   sessions:
     destroy: "Một ngày vui vẻ ạ!"
@@ -136,6 +144,9 @@ vi:
     user_info:
       view_profile: "Trang cá nhân"
       post_singular: "bài"
+    stats:
+      following: "người bạn đang theo dõi"
+      followers: "đang theo dõi bạn"
 
   activerecord:
     attributes:

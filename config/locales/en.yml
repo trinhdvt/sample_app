@@ -77,6 +77,14 @@ en:
     show:
       micropost: "Microposts"
       no_micropost: "Oops! No micropost has been posted yet!"
+    following:
+      title: "Following"
+    followers:
+      title: "Followers"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
 
   sessions:
     destroy: "Good Bye!"
@@ -136,6 +144,9 @@ en:
     user_info:
       view_profile: "View my profile"
       post_singular: "micropost"
+    stats:
+      following: "following"
+      followers: "followers"
 
   activerecord:
     attributes:
